@@ -16,7 +16,6 @@ export default function Header() {
           <li className='menuItens'>Orçamento</li>
         </ul>
       </div>
-      <div className='background'></div>
     </div>
   )
 }

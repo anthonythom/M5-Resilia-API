@@ -1,20 +1,23 @@
 import React from 'react'
 import './App.css'
-import Header from "./Components/Header/Header"
-import Footer from "./Components/Footer/Footer"
 import {
   BrowserRouter,
   Router,
   Route
 } from "react-router-dom"; 
+import Home from './Pages/Home/Home';
+import CatalogoSimples from './Pages/CatalogoSimples/CatalogoSimples';
 
 function App() {
 
-
   return (
     <div>
-      <Header />
-      <Footer />
+      <Route path="/">
+        <Home />
+      </Route>
+      <Route path="/catalogo">
+        <CatalogoSimples />
+      </Route>
     </div>
   )
 }

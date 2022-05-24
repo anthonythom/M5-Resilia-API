@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+.divTitulo {
+  height: 15rem;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tituloPrincipal {
+  font-family: 'Alex Brush', cursive;
+  font-size: 8.5rem;
+  color: white;
+}
+
+.menu {
+  width: 100%;
+  height: 10rem;
+  color: #fff;
+  background-color: #282828;
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(0px 0px, 100% 0px, 100% 60%, 0px 100%);
+}
+
+.menuHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuItens {
+  font-size: 2rem;
+  margin: 2rem;
+}

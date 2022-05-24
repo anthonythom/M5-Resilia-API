@@ -1,0 +1,28 @@
+.divSuperior {
+  width: 100%;
+  height: 35rem;
+  background-image: url("../../../assets/img/tatuador-fundo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: -50px;
+}
+
+.titulo {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+
+.listaTattoo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listaItens {
+  font-size: 2rem;
+}

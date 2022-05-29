@@ -11,35 +11,35 @@ export default function Galeria() {
                         <a href="#img1">
                             <img src="https://github.com/Rafalesson/AdoteAqui/blob/main/IMG/Cachorro.jpg?raw=true" class="min" />
                         </a>
-                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça.</p>
+                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça. </p>
                         <button>Comprar</button>
                     </li>
                     <li>
                         <a href="#img2">
                             <img src="https://github.com/Rafalesson/AdoteAqui/blob/main/IMG/Cachorro6.jpg?raw=true" class="min" />
                         </a>
-                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça.</p>
+                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça. </p>
                         <button>Comprar</button>
                     </li>
                     <li>
                         <a href="#img3">
                             <img src="https://github.com/Rafalesson/AdoteAqui/blob/main/IMG/Gato.jpg?raw=true" class="min" />
                         </a>
-                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça.</p>
+                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça. </p>
                         <button>Comprar</button>
                     </li>
                     <li>
                         <a href="#img4">
                             <img src="https://github.com/Rafalesson/AdoteAqui/blob/main/IMG/Gato1.jpg?raw=true" class="min" />
                         </a>
-                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça.</p>
+                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça. </p>
                         <button>Comprar</button>
                     </li>
                     <li>
                         <a href="#img5">
                             <img src="https://github.com/Rafalesson/AdoteAqui/blob/main/IMG/Cachorro8.jpg?raw=true" class="min" />
                         </a>
-                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça.</p>
+                        <p>Um montante de caracteres ordenados seguindo a norma padrão da língua portuguesa que não faz sentindo algum além de encher linguiça. </p>
                         <button>Comprar</button>
                     </li>
                 </ul>

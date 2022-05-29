@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className='divPai'>
-      <div className='divTitulo'>
-        <p className='tituloPrincipal'>Resilia Tattoo</p>
-      </div>
-      <div className="menu">
+    <section className='divPai'>
+      <header className='divTitulo'>
+        <h1 className='tituloPrincipal'>Resilia Tattoo Studio</h1>
+      </header>
+      <section className="menu">
         <nav className='menuHeader'>
           <Link to="/" className='menuItens'>Home</Link>
           <Link to="/catalogo" className='menuItens'>Catálogo</Link>
@@ -16,7 +16,7 @@ export default function Header() {
           <Link to="/tatuadores" className='menuItens'>Tatuadores</Link>
           <Link to="/orcamento" className='menuItens'>Orçamento</Link>
         </nav>
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }

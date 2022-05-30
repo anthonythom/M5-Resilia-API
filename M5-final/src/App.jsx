@@ -11,14 +11,14 @@ import CatalogoSimples from './Pages/CatalogoSimples/CatalogoSimples';
 function App() {
 
   return (
-    <div>
+    <BrowserRouter>
       <Route path="/">
         <Home />
       </Route>
       <Route path="/catalogo">
         <CatalogoSimples />
       </Route>
-    </div>
+    </BrowserRouter>
   )
 }
 

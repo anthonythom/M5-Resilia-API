@@ -12,13 +12,15 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <BrowserRouter>
-        <Route path="/">
+        <Route exact path="/">
           <Header />
           <Home />
           <Footer />
         </Route>
         <Route path="/catalogo">
+          <Header />
           <CatalogoSimples />
+          <Footer />
         </Route>
     </BrowserRouter>
   )

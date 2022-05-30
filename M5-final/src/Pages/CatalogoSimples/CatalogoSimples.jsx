@@ -2,7 +2,6 @@ import React from 'react'
 import "./catalogo.css"
 import {useState, useEffect} from 'react'
 import axios from 'axios'
-import Header from '../../Components/Header/Header'
 import Card from '../../Components/Card/Card'
 
 export default function CatalogoSimples() {
@@ -28,9 +27,7 @@ export default function CatalogoSimples() {
         <ul className='listaTattoo'>
           {data.map((data, index) => (
           <div key={index}>
-            {/* <li className='listaItens'>{data.DESCRICAO}</li>  */}
             <Card dados={data}/>
-            {console.log(data.DESCRICAO)}
           </div>
           ))}
         </ul>

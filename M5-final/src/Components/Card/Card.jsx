@@ -10,10 +10,9 @@ export default function Card({dados}) {
 						<div className="divImg"><img src={dados.IMAGEM} alt="" /></div>
       		</div>
       		<div className="cardInfos">
-						<div className='nomeProduto'>{dados.TITULO}</div>
-						<div className='precoAntigo'>R$ {dados.PRECO}</div>
-						<Link to="/orcamento" className="comprar">Comprar</Link>
-						<button className="comprar">Comprar</button>
+						<div className='nomeItem'>{dados.TITULO}</div>
+						<div className='preco'>R$ {dados.PRECO}</div>
+						<Link to="/orcamento" className="comprar"><button className="comprar">Comprar</button></Link>
       		</div>
    			</div>
 			</main>

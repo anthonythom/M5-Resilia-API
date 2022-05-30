@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
+.divPai{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .divTitulo {
-  height: 15rem;
-  background-color: #282828;
+  width: auto;
+  height: 10rem;
+  background-color: #070707;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,15 +16,15 @@
 
 .tituloPrincipal {
   font-family: 'Alex Brush', cursive;
-  font-size: 8.5rem;
-  color: white;
+  font-size: 4.5rem;
+  color: #daddd2;
 }
 
 .menu {
   width: 100%;
-  height: 10rem;
-  color: #fff;
-  background-color: #282828;
+  height: 7rem;
+  color: #daddd2;
+  background-color: #2e2f2f;
   display: flex;
   justify-content: center;
   clip-path: polygon(0px 0px, 100% 0px, 100% 60%, 0px 100%);
@@ -27,16 +32,21 @@
 
 .menuHeader {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
 }
 
 .menuItens {
-  font-size: 2rem;
-  margin: 2rem;
-  color: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  color: #daddd2;
 }
 
 .menuItens:hover { 
-  transform: scale(1.2); 
-  transition: .4s;
+  transform: scale(1.3); 
+  transition: .2s;
+  font-weight: bold;
+  color: aliceblue;
 }

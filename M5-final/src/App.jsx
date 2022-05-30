@@ -1,12 +1,14 @@
 import React from 'react'
 import './App.css'
+import './Components/reset_css/reset.css'
 import {
   BrowserRouter,
   Router,
   Route
-} from "react-router-dom"; 
+} from "react-router-dom";
 import Home from './Pages/Home/Home';
 import CatalogoSimples from './Pages/CatalogoSimples/CatalogoSimples';
+import Galeria from './Components/Card/Card';
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
     <BrowserRouter>
       <Route path="/">
         <Home />
+        {/* <Galeria /> */}
       </Route>
       <Route path="/catalogo">
         <CatalogoSimples />

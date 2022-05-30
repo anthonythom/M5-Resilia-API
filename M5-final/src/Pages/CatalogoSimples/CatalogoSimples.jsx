@@ -2,6 +2,8 @@ import React from 'react'
 import "./catalogo.css"
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import Header from '../../Components/Header/Header'
+import Card from '../../Components/Card/Card'
 
 export default function CatalogoSimples() {
   const [data, setData] = useState([])
@@ -17,7 +19,7 @@ export default function CatalogoSimples() {
   }, [])
   console.log(data)
 
-  return (
+  return (  
     <div className='divPrincipal'>
       <div className="divSuperior">
         <h1 className='titulo'>catalogo</h1>
@@ -26,8 +28,8 @@ export default function CatalogoSimples() {
         <ul className='listaTattoo'>
           {data.map((data, index) => (
           <div key={index}>
-            {/* <Title text={data.name} /> */}
-            <li className='listaItens'>{data.DESCRICAO}</li> 
+            {/* <li className='listaItens'>{data.DESCRICAO}</li>  */}
+            <Card dados={data}/>
             {console.log(data.DESCRICAO)}
           </div>
           ))}

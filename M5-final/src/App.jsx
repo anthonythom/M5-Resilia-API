@@ -8,20 +8,20 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import CatalogoSimples from './Pages/CatalogoSimples/CatalogoSimples';
-import Galeria from './Pages/Galeria/Galeria';
+import Galeria from './Components/Card/Card';
 
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <Route path="/">
-        <Home />,
+        <Home />
         {/* <Galeria /> */}
       </Route>
       <Route path="/catalogo">
         <CatalogoSimples />
       </Route>
-    </>
+    </BrowserRouter>
   )
 }
 

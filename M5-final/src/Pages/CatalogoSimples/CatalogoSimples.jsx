@@ -24,13 +24,13 @@ export default function CatalogoSimples() {
         <h1 className='titulo'>catalogo</h1>
       </div>
       <div>
-        <ul className='listaTattoo'>
+        <div className='listaTattoo'>
           {data.map((data, index) => (
           <div key={index}>
             <Card dados={data}/>
           </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   )

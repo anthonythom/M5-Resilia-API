@@ -8,6 +8,7 @@ import Home from './Pages/Home/Home';
 import CatalogoSimples from './Pages/CatalogoSimples/CatalogoSimples';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import NovoItem from './Components/NovoItem/NovoItem';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
         <Route path="/catalogo">
           <Header />
           <CatalogoSimples />
+          <Footer />
+        </Route>
+        <Route path="/cadastro">
+          <Header />
+          <NovoItem />
           <Footer />
         </Route>
     </BrowserRouter>

@@ -1,0 +1,59 @@
+.divPrincipalCadastro {
+  height: 100rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cadastroContainer {
+  margin-top: 3rem;
+  height: 50rem;
+  width: 80%;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tituloCadastro {
+  margin-top: 3rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.formCadastro {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.containerInputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.labelCadastro {
+  margin-bottom: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.inputCadastro {
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  width: 20rem;
+  padding: 10px;
+}
+
+.inputDesc {
+  height: 12rem;
+  resize: none;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 15rem;
+  border-radius: 15px;
+  background-color: #000;
+  color: #fff;
+  align-self: center;
+  cursor: pointer;
+}

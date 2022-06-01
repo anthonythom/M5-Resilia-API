@@ -1,12 +1,15 @@
 body{
-  background: #daddd2;
+  background: #2e2f2f;;
 }
 
 .divPrincCard {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  
+  padding: 5px;
+  gap: 5px;
+  background-color: #daddd2;
+   
 }
 
 .cardInfos {  
@@ -31,14 +34,18 @@ body{
   border: 1px solid #707070;
   border-radius: 4px;
   color: #000;
-  font-family: 'Arial';
   text-decoration: none;
   text-align: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
   cursor: pointer;
+  align-items: center;
 }
 
 img:hover {
   transform: scale(1.05);
   transition: 200ms;
+}
+
+.nomeItem{
+  text-transform: uppercase;
 }

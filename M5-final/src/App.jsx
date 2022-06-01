@@ -13,21 +13,17 @@ import NovoItem from './Components/NovoItem/NovoItem';
 function App() {
   return (
     <BrowserRouter>
+        <Header />
         <Route exact path="/">
-          <Header />
           <Home />
-          <Footer />
         </Route>
         <Route path="/catalogo">
-          <Header />
           <CatalogoSimples />
-          <Footer />
         </Route>
         <Route path="/cadastro">
-          <Header />
           <NovoItem />
-          <Footer />
         </Route>
+        <Footer />
     </BrowserRouter>
   )
 }

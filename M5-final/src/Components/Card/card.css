@@ -1,51 +1,85 @@
 body{
-  background: #2e2f2f;;
+  background: #2e2f2f;
 }
 
 .divPrincCard {
-  margin-top: 1.5rem;
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
   padding: 5px;
   gap: 5px;
-  background-color: #daddd2;
+  
    
 }
 
 .cardInfos {  
-  border-left: 2px solid #000;
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 25rem;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px black;
+  padding: 10px;
+  background-color: #daddd2;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .divImg img {
-  width: 20rem;
-  height: 20rem;
+  max-width: 18rem;
+  max-height: 15rem;
   border-radius: .5rem;
   box-shadow: 1px 1px 8px black;
   padding: 0;
 }
 
+.preco{
+  font-weight: bolder;
+}
+
 .comprar {
-  margin-top: 10px;
+  display: flex;
+  font-size: larger;
   width: 200px;
-  height: 30px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  height: 40px;
+  background: #FFFFFF;
   border: 1px solid #707070;
   border-radius: 4px;
-  color: #000;
+  color: #2e2f2f;
   text-decoration: none;
   text-align: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  cursor: pointer;
   align-items: center;
+  justify-content: center;
+  
+ 
 }
 
-img:hover {
+button .comprar{
+   align-items: center;
+  justify-content: center;
+}
+
+.comprar:hover{
+  background-color: #2e2f2f;
+  color: #daddd2;
+  font-size: larger;
+  font-weight: bolder;
+  transition-duration: 1s;
+}
+
+.cardInfos:hover {
   transform: scale(1.05);
-  transition: 200ms;
+  transition-delay: 0.5;
+  transition-duration: 1s;
 }
 
 .nomeItem{
+  padding: 2px;
+  margin-top: 2px;
   text-transform: uppercase;
+  font-size: larger;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
+

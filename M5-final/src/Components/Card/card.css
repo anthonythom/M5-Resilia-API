@@ -1,20 +1,10 @@
-/* cores: 
-branco: #FBFFF1 
-cinza claro bg: #3E4247
-cinza escuro: #2e2f2f
-*/
-body{
-  background-color: #FBFFF1;
-}
-
 .divPrincCard {
   margin: 1.5rem;
   display: flex;
   flex-direction: column;
   padding: 5px;
   gap: 5px;
-  
-   
+     
 }
 
 .cardInfos {  

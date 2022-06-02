@@ -3,18 +3,21 @@ import { Link } from "react-router-dom";
 import "./card.css"
 
 export default function Card({dados}) {
-	return (
-			<main>
+	return(
+		<main>
 			<div className='divPrincCard'>
-				<div className="cardImg">
-					<div className="divImg"><img src={dados.IMAGEM} alt="" /></div>
-      			</div>
-      			<div className="cardInfos">
-					<div className='nomeItem'>{dados.TITULO}</div>
-					<div className='preco'>R$ {dados.PRECO}</div>
-					<Link to="/orcamento" className="comprar"><button className="comprar">Comprar</button></Link>
-      			</div>
-   			</div>
-			</main>
+				<div className="cardInfos">
+				<div className="divImg"><img src={dados.IMAGEM} alt="" /></div>
+				<div className='nomeItem'>{dados.TITULO}</div>
+				<div className='descricao'>{dados.DESCRICAO}</div>
+				<div className='preco'>R$ {dados.PRECO}</div>
+				<Link type="button" to="/orcamento" className="comprar">Comprar</Link>
+					
+				</div>
+				
+			</div>
+		</main>
 	)
 }
+
+

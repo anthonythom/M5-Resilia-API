@@ -22,9 +22,7 @@ function App() {
           <CatalogoSimples />
         </Route>
         <Route path="/catalogo-exclusivas">
-          <Header />
           <CatalogoExclusivas />
-          <Footer />
         </Route>
         <Route path="/cadastro">
           <NovoItem />

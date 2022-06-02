@@ -8,6 +8,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 
 .divFooterTitulo {

@@ -7,9 +7,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #daddd2;
+    color: #FBFFF1;
     margin-top: -50px;
+    clip-path: polygon(0 12%, 100% 0, 100% 87%, 0% 100%);
+    
 }
+
 
 
 

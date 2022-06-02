@@ -15,17 +15,3 @@ export default function Header() {
         <h1 className='tituloPrincipal'>Resilia Tattoo Studio</h1>
       </header>
       <section className="menu">
-        <div className='menuContainer'>
-          <button className='menuMobile' onClick={onClick}>Menu</button>
-          <nav className={`menuHeader ${isActive ? "active" : "inactive"}`} ref={dropDownRef}>
-            <Link to="/" className='menuItens'>Home</Link>
-            <Link to="/catalogo" className='menuItens'>Catálogo</Link>
-            <Link to="/acessorios" className='menuItens'>Acessórios</Link>
-            <Link to="/tatuadores" className='menuItens'>Tatuadores</Link>
-            <Link to="/orcamento" className='menuItens'>Orçamento</Link>
-          </nav>
-        </div>
-      </section>
-    </section>
-  )
-}

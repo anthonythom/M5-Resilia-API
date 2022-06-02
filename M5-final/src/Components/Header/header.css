@@ -30,6 +30,12 @@
   clip-path: polygon(0px 0px, 100% 0px, 100% 60%, 0px 100%);
 }
 
+.menuContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .menuHeader {
   display: flex;
   align-items: center;
@@ -49,4 +55,41 @@
   transition: .2s;
   font-weight: bold;
   color: aliceblue;
+}
+
+.menuMobile {
+  display: none;
+}
+
+/* Menu Hambuerger */
+
+
+@media (max-width: 820px) {
+  .tituloPrincipal {
+    font-size: 3.5rem;
+  }
+
+  .menu {
+    clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%)
+  }
+  
+  .menuContainer {
+    justify-content: left;
+    margin-left: 5%;
+  }
+
+  .menuMobile {
+    display: block;
+  }
+
+  .menuHeader {
+    display: none;
+  }
+
+   .menuHeader.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
+  }
 }

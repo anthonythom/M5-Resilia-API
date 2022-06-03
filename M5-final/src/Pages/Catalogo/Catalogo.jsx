@@ -16,7 +16,6 @@ export default function Catalogo() {
         console.log(error)
       })
   }, [])
-  console.log(data)
 
   return (  
     <div className='divPrincipal'>

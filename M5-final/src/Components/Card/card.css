@@ -48,8 +48,6 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   align-items: center;
   justify-content: center;
-  
- 
 }
 
 button .comprar{
@@ -80,3 +78,29 @@ button .comprar{
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.icones {
+  display: flex;
+}
+
+.edit, .delete {
+  display: flex;
+  font-size: larger;
+  width: 2.5rem;
+  height: 2rem;
+  background: #3E4247;
+  border: 1px solid #2e2f2f;
+  border-radius: 4px;
+  color:#FBFFF1 ;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete {
+  background-color: #c41431;
+  color: #fff;
+  cursor: pointer;
+} 

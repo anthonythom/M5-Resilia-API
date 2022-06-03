@@ -16,7 +16,7 @@ export default function Header() {
       </header>
       <section className="menu">
         <div className='menuContainer'>
-          <button className='menuMobile' onClick={onClick}>Menu</button>
+          <button className={`menuMobile ${isActive ? "active" : "inactive"}`} onClick={onClick}>Menu</button>
           <nav className={`menuHeader ${isActive ? "active" : "inactive"}`} ref={dropDownRef}>
             <Link to="/" className='menuItens'>Home</Link>
             <Link to="/catalogo" className='menuItens'>Catálogo</Link>

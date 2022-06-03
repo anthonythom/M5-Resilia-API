@@ -4,8 +4,7 @@
   flex-direction: column;
   padding: 5px;
   gap: 5px;
-  
-   
+     
 }
 
 .cardInfos {  
@@ -14,11 +13,12 @@
   width: 18rem;
   height: 25rem;
   border-radius: 2%;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.76);
   padding: 10px;
-  background-color: #daddd2;
+  background-color: #2e2f2f;
   align-items: center;
   justify-content: space-between;
+  color: #FBFFF1;
   
 }
 
@@ -39,10 +39,10 @@
   font-size: larger;
   width: 200px;
   height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #707070;
+  background: #3E4247;
+  border: 1px solid #2e2f2f;
   border-radius: 4px;
-  color: #2e2f2f;
+  color:#FBFFF1 ;
   text-decoration: none;
   text-align: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -55,11 +55,12 @@
 button .comprar{
    align-items: center;
   justify-content: center;
+  
 }
 
 .comprar:hover{
-  background-color: #2e2f2f;
-  color: #daddd2;
+  background-color: #FBFFF1;
+  color: #2e2f2f;
   font-size: larger;
   font-weight: bolder;
   transition-duration: 1s;

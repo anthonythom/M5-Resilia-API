@@ -4,13 +4,13 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from '../../Components/Card/Card'
 
-export default function CatalogoSimples() {
+export default function Catalogo() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    axios.get(`https://tattooresilia.herokuapp.com/catalogo`)
+    axios.get(`https://m5-tattoo.herokuapp.com/catalogo`)
       .then(resposta => {
-        setData(resposta.data.Tatuagens)
+        setData(resposta.data)
       })
       .catch(error => {
         console.log(error)

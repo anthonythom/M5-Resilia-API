@@ -26,11 +26,14 @@ export default function NovoItem() {
     }
   }, [tipo])
   
-  const onSubmit = async (data) =>  {
-    // data.imagem = "https://i.pinimg.com/564x/a8/4b/c5/a84bc5d3ca6f4694ae7d7904fdcfd14c.jpg"
-    const req = await axios.post(`https://tattooresilia.herokuapp.com/${rota}`, data)
+  const onSubmit = async data =>  {
     console.log(data)
-    setSucesso(true)
+    const req = await axios.post(`https://m5-tattoo.herokuapp.com/${rota}`, data)
+    console.log(req.statusText)
+    // if (req.statusText == 'Created') {
+    //   setSucesso(true)
+    // }
+    // setSucesso(true)
   };
 
   return (

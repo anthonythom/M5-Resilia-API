@@ -5,8 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
-import CatalogoSimples from './Pages/CatalogoSimples/CatalogoSimples';
-import CatalogoExclusivas from './Pages/Exclusivas/CatalogoExclusivas';
+import Catalogo from './Pages/Catalogo/Catalogo';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import NovoItem from './Components/NovoItem/NovoItem';
@@ -19,10 +18,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/catalogo">
-          <CatalogoSimples />
-        </Route>
-        <Route path="/catalogo-exclusivas">
-          <CatalogoExclusivas />
+          <Catalogo />
         </Route>
         <Route path="/cadastro">
           <NovoItem />

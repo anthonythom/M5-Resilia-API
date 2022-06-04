@@ -3,11 +3,8 @@ import "./header.css"
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const dropDownRef = useRef(null)
   const [isActive, setIsActive] = useState(false)
   const onClick = () => setIsActive(!isActive)
-
-  console.log(isActive)
 
   return (
     <section className='divPai'>
@@ -17,7 +14,7 @@ export default function Header() {
       <section className="menu">
         <div className='menuContainer'>
           <button className={`menuMobile ${isActive ? "active" : "inactive"}`} onClick={onClick}>Menu</button>
-          <nav className={`menuHeader ${isActive ? "active" : "inactive"}`} ref={dropDownRef}>
+          <nav className={`menuHeader ${isActive ? "active" : "inactive"}`}>
             <Link to="/" className='menuItens'>Home</Link>
             <Link to="/catalogo" className='menuItens'>Catálogo</Link>
             <Link to="/acessorios" className='menuItens'>Acessórios</Link>

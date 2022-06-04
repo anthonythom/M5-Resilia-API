@@ -1,15 +1,16 @@
 import React from 'react'
-import "./exclusivas.css"
+import "./galeria.css"
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from '../../Components/Card/Card'
 
-export default function CatalogoExclusivas() {
+export default function Acessorios() {
   const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get(`https://tattooresilia.herokuapp.com/acessorios`)
+        axios.get(`https://m5-tattoo.herokuapp.com/acessorios`)
             .then(resposta => {
+                console.log(resposta)
                 setData(resposta.data.acessorios)
             })
             .catch(error => {
@@ -20,8 +21,8 @@ export default function CatalogoExclusivas() {
 
     return(  
         <div className='divPrincipal'>
-            <div className="divSuperior">
-                <h1 className='titulo'>exclusivas</h1>
+            <div className="divImagem">
+                <h1 className='titulo'>Acessórios</h1>
             </div>
         <div>
             <div className='listaAcessorios'>

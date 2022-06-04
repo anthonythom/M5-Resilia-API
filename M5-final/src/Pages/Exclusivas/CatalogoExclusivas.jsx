@@ -11,6 +11,7 @@ export default function CatalogoExclusivas() {
         axios.get(`https://tattooresilia.herokuapp.com/catalogo-exclusivas`)
             .then(resposta => {
                 setData(resposta.data.exclusivas)
+                
             })
             .catch(error => {
                 console.log(error)

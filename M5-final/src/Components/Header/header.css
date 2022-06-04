@@ -27,7 +27,7 @@
   background-color: #2e2f2f;
   display: flex;
   justify-content: center;
-  clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
 }
 
 .menuHeader {

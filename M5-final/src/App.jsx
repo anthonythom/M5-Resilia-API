@@ -10,6 +10,7 @@ import CatalogoExclusivas from './Pages/Exclusivas/CatalogoExclusivas';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import NovoItem from './Components/NovoItem/NovoItem';
+import Acessorios from './Pages/Galeria/Galeria';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route path="/catalogo-exclusivas">
           <CatalogoExclusivas />
+        </Route>
+        <Route path="/acessorios">
+          <Acessorios />
         </Route>
         <Route path="/cadastro">
           <NovoItem />

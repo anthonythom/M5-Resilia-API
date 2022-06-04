@@ -9,12 +9,9 @@
     align-items: center;
     color: #FBFFF1;
     margin-top: -50px;
-    clip-path: polygon(0 12%, 100% 0, 100% 87%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0% 100%);
     
 }
-
-
-
 
 .titulo {
     font-size: 3.2rem;

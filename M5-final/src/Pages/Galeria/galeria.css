@@ -1,123 +1,39 @@
-
-
 *{
     margin: 0;
     padding: 0 0 0 10px;
     box-sizing: border-box;
    }
-
-   body{
-       background: #daddd2;
-   }
-
-   ul{
-    width: 80%;
-    list-style:none;
+.divImagem {
+    width: 100%;
+    height: 25rem;
+    background-image: url("../../../assets/img/mostruario2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    margin: 3rem auto;
-   }
+    align-items: center;
+    color: #FBFFF1;
+    margin-top: -50px;
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0% 100%);
+    
+}
 
-   ul li{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
-
-   ul li p{
-       margin: 1rem auto;
-       text-align: justify;
-       width: 85%;
-       font-size: 1.3rem;
-   }
-
-   ul li button{
-       padding: 10px;
-       width: 60%;
-       border-radius: .5rem;
-       border-style: none;
-       box-shadow: 1px 1px 8px black;
-       cursor: pointer;
-       background-color: rgba(62, 66, 71, .5);
-       color: #fbfff1;
-       font-weight: bold;
-   }
-
-   ul li button:hover{
-       background: #070707;
-   }
-
-   img{
-    border-radius: .5rem;
-    box-shadow: 1px 1px 8px black;
-    padding: 0;
-   }
-
-   .min{
-    width: 180px;
-    display: block;
-   }
-
-   .lbox{
-    visibility: hidden;
-    opacity: 0;
-   }
-
-   .lbox:target{
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
-    background: rgba(10,10,10, .9);
-    position: fixed;
-   }
-
-   img:hover{
-       transform: scale(1.05);
-       transition: 200ms;
-   }
-
-   .box_img {
-    width: 35%;
-    margin: 0px auto;
-   }
-
-   .btn{
-    color: #fff;
-    font-family: 'Arial';
-    text-decoration: none;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    text-align: center;
-   }
-
-   #prev {
-    left: 5%;
-    top: 45%;
-   }
-
-   #next {
-    right: 5%;
-    top: 45%;
-   }
-
-   #close {
-    right: 2%;
-    top: 0;
-   }
-
-   .box_img img{
-    opacity: 0;
-   }
-
-   .lbox:target .box_img img{
-    width: 80%;
-    margin-left: 100px;
-    margin-top: 60px;
-    opacity: 1;
-    transition: opacity .4s linear;
-   }
+.titulo {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.795);
+    letter-spacing: .5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+  
+.listaAcessorios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+  
+.listaItens {
+    font-size: 2rem;
+}

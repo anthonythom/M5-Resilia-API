@@ -8,7 +8,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
 }
 
 .divFooterTitulo {
@@ -18,7 +18,7 @@
 .tituloFooter {
   font-family: 'Alex Brush', cursive;
   font-size: 2rem;
-  color: #daddd2;
+  color: #FBFFF1;
   text-align: center;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .footerTexto {
-  color: white;
+  color: #FBFFF1;
   margin-top: 1rem;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .iconesRedes {
-  color: #fff;
+  color: #FBFFF1;
   margin-right: 4rem;
   height: 4rem;
   width: 4rem;

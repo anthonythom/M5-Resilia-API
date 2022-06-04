@@ -23,6 +23,7 @@ export default function Card({dados}) {
 		<main>
 			<div className='divPrincCard'>
 				<div className="cardInfos">
+
 					<div className="icones">
 						<Link type="button" to="/atualiza" className="edit"><Edit /></Link>
 						<button className="delete"><DeleteForever onClick={() => handleDelete(id)} className="deleteIcon" /></button>
@@ -32,6 +33,7 @@ export default function Card({dados}) {
 				<div className='descricao'>{dados.descricao}</div>
 				<div className='preco'>R$ {dados.preco}</div>
 					<Link type="button" to="/orcamento" className="comprar">Comprar</Link>
+
 				</div>
 			</div>
 		</main>

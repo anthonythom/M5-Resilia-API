@@ -6,12 +6,16 @@
 
 .cadastroContainer {
   margin-top: 3rem;
-  height: 50rem;
+  height: 40rem;
   width: 80%;
-  border: 2px solid #000;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-radius: 2%;
+  box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.76);
+  padding: 1rem;
+  background-color: #2e2f2f;
+  color: #FBFFF1;
 }
 
 .tituloCadastro {
@@ -48,6 +52,7 @@
   width: 20rem;
   padding: 10px;
   border: 2px solid #000;
+  color: #2e2f2f;
 }
 
 .inputDesc {
@@ -57,10 +62,28 @@
 
 .btn {
   height: 2.5rem;
-  width: 15rem;
-  border-radius: 15px;
-  background-color: #000;
-  color: #fff;
+  width: 10rem;
   align-self: center;
   cursor: pointer;
+  display: flex;
+  font-size: larger;
+  background-color: #3E4247;
+  border: .1rem solid #2e2f2f;
+  border-radius: 5%;
+  color:#FBFFF1 ;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
 }
+
+.btn:hover{
+  background-color: #FBFFF1;
+  color: #2e2f2f;
+  font-size: larger;
+  font-weight: bolder;
+  transition-duration: 1s;
+  box-shadow: .1rem .1rem .9rem rgba(0, 0, 0, 0.76);
+}
+

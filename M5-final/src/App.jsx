@@ -1,8 +1,10 @@
 import React from 'react'
+import './reset_css/reset.css'
 import './App.css'
 import {
-  BrowserRouter,
-  Route
+  BrowserRouter as Router,
+  Route,
+  Switch
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Catalogo from './Pages/Catalogo/Catalogo';
@@ -13,22 +15,27 @@ import Acessorios from './Pages/Galeria/Galeria';
 
 function App() {
   return (
-    <BrowserRouter>
-        <Header />
+    <Router>
+      <Header />
+      <Switch>
         <Route exact path="/">
           <Home />
         </Route>
+
         <Route path="/catalogo">
           <Catalogo />
         </Route>
+
         <Route path="/acessorios">
           <Acessorios />
         </Route>
+
         <Route path="/cadastro">
           <NovoItem />
         </Route>
-        <Footer />
-    </BrowserRouter>
+      </Switch>
+      <Footer />
+    </Router>
   )
 }
 

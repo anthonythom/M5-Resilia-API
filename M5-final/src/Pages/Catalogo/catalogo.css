@@ -1,15 +1,16 @@
 .divSuperior {
   width: 100%;
-  height: 25rem;
+  height: 15rem;
   background: url("../../../assets/img/tatuador-fundo2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #FBFFF1;
   margin-top: -50px;
-  clip-path: polygon(0 12%, 100% 0, 100% 87%, 0% 100%);
+  clip-path: polygon(0 12%, 100% 0, 100% 80%, 0% 100%);
   
 }
 

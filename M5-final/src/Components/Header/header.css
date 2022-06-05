@@ -6,28 +6,31 @@
 
 .divTitulo {
   width: auto;
-  height: 10rem;
-  background-color: #070707;
+  height: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #070707;
 }
 
 .tituloPrincipal {
   font-family: 'Alex Brush', cursive;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   color: #FBFFF1;
+  
 }
 
 .menu {
   width: 100%;
-  height: 7rem;
+  height: 5rem;
   color: #FBFFF1;
-  background-color: #2e2f2f;
+  background-color: #070707;
   display: flex;
   justify-content: center;
-  clip-path: polygon(0px 0px, 100% 0px, 100% 80%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0px, 100% 70%, 0px 100%);
+  box-sizing: border-box;
+  padding-bottom: 2rem;
 }
 
 .menuContainer {

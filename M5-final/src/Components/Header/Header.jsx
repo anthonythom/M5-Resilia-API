@@ -7,12 +7,12 @@ export default function Header() {
   const onClick = () => setIsActive(!isActive)
 
   return (
-    <section className='divPai'>
-      <header className='divTitulo'>
+    <header className='divPai'>
+      <section className='divTitulo'>
         <h1 className='tituloPrincipal'>Resilia Tattoo Studio</h1>
-      </header>
-      <section className="menu">
-        <div className='menuContainer'>
+      </section>
+     
+        <section className='menuContainer menu'>
           <button className={`menuMobile ${isActive ? "active" : "inactive"}`} onClick={onClick}>Menu</button>
           <nav className={`menuHeader ${isActive ? "active" : "inactive"}`}>
             <Link to="/" className='menuItens'>Home</Link>
@@ -21,8 +21,7 @@ export default function Header() {
             <Link to="/tatuadores" className='menuItens'>Tatuadores</Link>
             <Link to="/orcamento" className='menuItens'>Orçamento</Link>
           </nav>
-        </div>
-      </section>
-    </section>
+        </section>
+    </header>
   )
 }

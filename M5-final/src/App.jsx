@@ -12,6 +12,7 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import NovoItem from './Components/NovoItem/NovoItem';
 import Acessorios from './Pages/Galeria/Galeria';
+import Orcamento from './Pages/Orcamento/Orcamento';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+          
         </Route>
 
         <Route path="/catalogo">
@@ -33,6 +35,11 @@ function App() {
         <Route path="/cadastro">
           <NovoItem />
         </Route>
+
+        <Route path="/orcamento">
+          <Orcamento />
+        </Route>
+
       </Switch>
       <Footer />
     </Router>

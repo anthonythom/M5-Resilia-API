@@ -12,6 +12,8 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import NovoItem from './Components/NovoItem/NovoItem';
 import Acessorios from './Pages/Galeria/Galeria';
+import Tatuadores from './Pages/Tatuadores/Tatuadores';
+
 
 function App() {
   return (
@@ -30,8 +32,11 @@ function App() {
           <Acessorios />
         </Route>
 
+        <Route path="/tatuadores">
+          <Tatuadores />
+        </Route>
 
-        
+
 
         <Route path="/cadastro">
           <NovoItem />

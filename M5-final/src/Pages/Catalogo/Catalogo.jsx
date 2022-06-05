@@ -1,6 +1,7 @@
 import React from 'react'
 import "./catalogo.css"
 import {useState, useEffect} from 'react'
+import { Link } from "react-router-dom";
 import axios from 'axios'
 import Card from '../../Components/Card/Card'
 
@@ -23,6 +24,9 @@ export default function Catalogo() {
         <h1 className='titulo'>catalogo</h1>
       </div>
       <div>
+       
+     	  <Link type="button" to="/cadastro" className='btnAdd'>+</Link>
+      				
         <div className='listaTattoo'>
           {data.map((data, index) => (
           <div key={index}>

@@ -30,6 +30,9 @@ function App() {
           <Acessorios />
         </Route>
 
+
+        
+
         <Route path="/cadastro">
           <NovoItem />
         </Route>

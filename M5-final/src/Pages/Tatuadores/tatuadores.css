@@ -21,3 +21,11 @@
     letter-spacing: .5rem;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
+
+  .listaTatuadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }

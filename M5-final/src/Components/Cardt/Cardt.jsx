@@ -10,6 +10,7 @@ export default function Cardt({dados}) {
 	    <div className="cardInfos">
             <div className="avatar"><img src={dados.avatar} alt="" /></div>
             <div className='nome'>{dados.nome}</div>
+            <h1>Telefone</h1>
 	        <div className='telefone'>{dados.telefone}</div>
             </div>
             </div>

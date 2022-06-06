@@ -44,8 +44,14 @@
     font-size: larger;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
+  .h1{  padding: .2rem;
+    margin-top: .1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 
-  .telefone{
+  }
+  .telefone {
     padding: .2rem;
     margin-top: .1rem;
     text-transform: uppercase;

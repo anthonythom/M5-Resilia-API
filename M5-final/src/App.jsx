@@ -10,10 +10,12 @@ import Home from './Pages/Home/Home';
 import Catalogo from './Pages/Catalogo/Catalogo';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import NovoItem from './Components/NovoItem/NovoItem';
+import Cadastro from './Pages/Cadastro/Cadastro';
 import Acessorios from './Pages/Galeria/Galeria';
 import Tatuadores from './Pages/Tatuadores/Tatuadores';
 
+import Orcamento from './Pages/Orcamento/Orcamento';
+import AlteraItem from "./Pages/AlteraItem/AlteraItem"
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+          
         </Route>
 
         <Route path="/catalogo">
@@ -38,9 +41,18 @@ function App() {
 
 
 
-        <Route path="/cadastro">
-          <NovoItem />
+        <Route path="/atualiza/:itemID">
+          <AlteraItem />
         </Route>
+
+        <Route path="/cadastro">
+          <Cadastro />
+        </Route>
+
+        <Route path="/orcamento">
+          <Orcamento />
+        </Route>
+
       </Switch>
       <Footer />
     </Router>

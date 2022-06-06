@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-import { sliderData } from "../../slider-data";
+import { sliderData } from "../../../assets/dataCarrossel/slider-data";
 import "./home.scss";
 
 const Slider = () => {

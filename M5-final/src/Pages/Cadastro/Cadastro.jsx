@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
-import "./novoItem.css"
+import "./Cadastro.css"
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 
-export default function NovoItem() {
+export default function Cadastro() {
   const { register, handleSubmit } = useForm();
   const [sucesso, setSucesso] = useState(false)
   const [tipo, setTipo] = useState("")
@@ -30,10 +30,10 @@ export default function NovoItem() {
     console.log(data)
     const req = await axios.post(`https://m5-tattoo.herokuapp.com/${rota}`, data)
     console.log(req.statusText)
-    // if (req.statusText == 'Created') {
-    //   setSucesso(true)
-    // }
-    // setSucesso(true)
+    if (req.statusText == 'Created') {
+      setSucesso(true)
+    }
+    setSucesso(true)
   };
 
   return (
@@ -74,7 +74,7 @@ export default function NovoItem() {
               </div>
         </form>
       <div style={{justifyContent: "center", marginTop: "5rem"}}>
-        <h1 className='tituloCadastro' style={estilo.resposta}>Usuário criado com sucesso</h1>
+        <h1 className='tituloCadastro' style={estilo.resposta}>Item cadastrado com sucesso!</h1>
       </div>
       </div>
     </div>

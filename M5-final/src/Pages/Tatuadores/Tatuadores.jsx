@@ -12,10 +12,13 @@ export default function Tatuadores() {
         })
   }, [])
 console.log(data)
-  return (
-    <div>
-      
 
+
+return (  
+  <div className='divPrincipal'>
+    <div className="divSuperior">
+      <h1 className='titulo'>tatuadores</h1>
+    </div>
     </div>
   )
 }

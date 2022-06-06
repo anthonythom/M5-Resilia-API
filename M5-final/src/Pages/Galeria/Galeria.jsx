@@ -3,6 +3,7 @@ import "./galeria.css"
 import {useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from '../../Components/Card/Card'
+import { Link } from "react-router-dom";
 
 export default function Acessorios() {
   const [data, setData] = useState([])
@@ -11,7 +12,7 @@ export default function Acessorios() {
         axios.get(`https://m5-tattoo.herokuapp.com/acessorios`)
             .then(resposta => {
                 console.log(resposta)
-                setData(resposta.data.acessorios)
+                setData(resposta.data)
             })
             .catch(error => {
                 console.log(error)

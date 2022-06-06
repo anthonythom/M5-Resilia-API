@@ -4,7 +4,7 @@ import axios from "axios"
 import Cardt from '../../Components/Cardt/Cardt'
 
 export default function Tatuadores() {
-  const [data, setData] = useState({})
+  const [data, setData] = useState([])
 
   useEffect(() => {
       axios.get(`https://m5-tattoo.herokuapp.com/tatuadores`)

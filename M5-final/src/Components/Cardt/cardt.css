@@ -22,3 +22,33 @@
     text-align: center;
     
   }
+
+  .avatar img {
+    max-width: 18rem;
+    max-height: 15rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .9rem rgba(0, 0, 0, 0.76);
+    padding: 0;
+  }
+
+  .cardInfos:hover {
+    transform: scale(1.05);
+    transition-delay: 0.5;
+    transition-duration: 1s;
+  }
+
+  .nome{
+    padding: .2rem;
+    margin-top: .1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .telefone{
+    padding: .2rem;
+    margin-top: .1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }

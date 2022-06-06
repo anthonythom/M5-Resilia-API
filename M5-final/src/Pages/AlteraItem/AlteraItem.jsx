@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import { useForm } from "react-hook-form";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import axios from 'axios';
 import "./alteraItem.css"
 
 export default function Cadastro() {
+  const id = useParams()
   const { register, handleSubmit } = useForm();
+  const [data, setData] = useState({})
   const [sucesso, setSucesso] = useState(false)
-  const [tipo, setTipo] = useState("")
-  const [rota, setRota] = useState("")
+  const urlAPI = `https://m5-tattoo.herokuapp.com/catalogo/${id.itemID}`
 
    const estilo = {
     resp: {
@@ -19,21 +21,26 @@ export default function Cadastro() {
   }
 
   useEffect(() => {
-     if (tipo == 1) {
-      setRota("catalogo")
-    } else {
-      setRota("acessorios")
-    }
-  }, [tipo])
+    axios.get(urlAPI)
+      .then(resposta => {
+        setData(resposta.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }, [])
   
-  const onSubmit = async data =>  {
-    console.log(data)
-    const req = await axios.post(`https://m5-tattoo.herokuapp.com/${rota}`, data)
-    console.log(req.statusText)
-    if (req.statusText == 'Created') {
+  const onSubmit = async valor => {
+     for(let key in valor) {
+        if(valor[key] === "") {
+           valor[key] = data[key]
+        }
+      }
+    const req = await axios.put(urlAPI, valor)
+    console.log(req)
+    if (req.statusText == 'OK') {
       setSucesso(true)
     }
-    setSucesso(true)
   };
 
   return (
@@ -45,32 +52,25 @@ export default function Cadastro() {
           <div className="containerInputsPai">
             <div className="containerInputs">
               <label htmlFor="" className='labelCadastro'>Título</label>
-              <input type="text" className='inputCadastro' { ...register ('titulo', { required: true, pattern: /([\s\S]+?(?=\b[a-z][)]|$))/ }) } placeholder="Nome"/>
+              <input type="text" className='inputCadastro' { ...register ('titulo') } placeholder={data.titulo}/>
 
               <label htmlFor="" className='labelCadastro'>Descrição</label>
-              <textarea type="text" className='inputCadastro inputDesc' { ...register ('descricao', { required: true, pattern: /([\s\S]+?(?=\b[a-z][)]|$))/ }) } placeholder="Descrição detalhada"/>
+              <textarea type="text" className='inputCadastro inputDesc' { ...register ('descricao') } placeholder={data.descricao}/>
             </div>
 
             <div className="containerInputs">
               <label htmlFor="" className='labelCadastro'>Tamanho (em cm)</label>
-              <input type="text" className='inputCadastro' { ...register ('tamanho', { required: true, pattern: /^[1-9]\d{0,2}/ }) } placeholder="15"/>
+              <input type="text" className='inputCadastro' { ...register ('tamanho', {  pattern: /^[1-9]\d{0,2}/ }) } placeholder={data.tamanho}/>
 
               <label htmlFor="" className='labelCadastro'>Preço (em R$)</label>
-              <input type="text" className='inputCadastro' { ...register ('preco', { required: true, pattern: /^[1-9]\d{0,4}(\.\d{3})*,\d{2}$/ }) } placeholder="199,90"/>
+              <input type="text" className='inputCadastro' { ...register ('preco', {  pattern: /^[1-9]\d{0,4}(\.\d{3})*,\d{2}$/ }) } placeholder={data.preco}/>
 
               <label htmlFor="" className='labelCadastro'>URL da Imagem</label>
-              <input type="text" className='inputCadastro' { ...register ('imagem', { required: true }) } placeholder="https..."/>
-
-              <label htmlFor="" className='labelCadastro'>Informe o tipo de item</label>
-              <select name="" id="" className='inputCadastro' onChange={(e) => setTipo(e.target.value)}>
-                <option value=""></option>
-                <option value="1">Tatuagem</option>
-                <option value="2">Acessório</option>
-              </select>
+              <input type="text" className='inputCadastro' { ...register ('imagem') } placeholder="https..."/>
             </div>
           </div>
               <div className="">
-                <button className='btn'>Cadastrar</button>
+                <button className='btn'>Alterar</button>
               </div>
         </form>
       <div style={{justifyContent: "center", marginTop: "5rem"}}>

@@ -9,7 +9,6 @@ export default function Cadastro() {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState({})
   const [sucesso, setSucesso] = useState(false)
-  const urlAPI = `https://m5-tattoo.herokuapp.com/catalogo/${id.itemID}`
 
    const estilo = {
     resp: {
@@ -21,13 +20,18 @@ export default function Cadastro() {
   }
 
   useEffect(() => {
-    axios.get(urlAPI)
-      .then(resposta => {
-        setData(resposta.data)
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    console.log(data)
+      axios.get(`https://m5-tattoo.herokuapp.com/acessorios/${id.itemID}`)
+        .then(accResponse => {
+          setData(accResponse.data)
+        })
+    console.log(data)
+      if (data == null) {
+        axios.get(`https://m5-tattoo.herokuapp.com/catalogo/${id.itemID}`)
+          .then(catResponse => {
+            setData(catResponse.data)
+          })
+      }
   }, [])
   
   const onSubmit = async valor => {
@@ -36,9 +40,10 @@ export default function Cadastro() {
            valor[key] = data[key]
         }
       }
-    const req = await axios.put(urlAPI, valor)
+    const req = await axios.put(`https://m5-tattoo.herokuapp.com/acessorios/${id.itemID}`, valor)
+    const req2 = await axios.put(`https://m5-tattoo.herokuapp.com/catalogo/${id.itemID}`, valor)
     console.log(req)
-    if (req.statusText == 'OK') {
+    if (req.statusText == 'OK' || req2.statusText == 'OK') {
       setSucesso(true)
     }
   };

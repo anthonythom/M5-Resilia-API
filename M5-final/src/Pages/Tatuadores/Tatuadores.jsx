@@ -32,14 +32,12 @@ return (
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Tatto Parlour Owner </h1>
+          <h1>Tattou Parlour Owner </h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            Tattou  <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
-          <img src="../../../assets/img/tatuadoresimg.jpg" alt="" />
-        </a>
+      
       </div>
     </div>
       </div>

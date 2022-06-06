@@ -1,45 +1,21 @@
-import { useEffect, useRef } from "react";
-import { init } from "ityped";
-import "./tatuadores.scss"
-
-
+import React, {useState, useEffect} from 'react'
+import "./tatuadores.css"
+import axios from "axios"
 
 export default function Tatuadores() {
-  const textRef = useRef();
+  const [data, setData] = useState({})
 
   useEffect(() => {
-    init(textRef.current, {
-      showCursor: true,
-      backDelay: 1500,
-      backSpeed:60,
-      strings: ["Desiner", "Artist", "Creator"],
-    });
-  }, []);
-
-return (  
-    <div className='divPrincipal'>
-      <div className="divSuperior">
-        <h1 className='titulo'>Tatuadores</h1>
-      </div>
-      <div className="tatuador">
-      </div>
-      <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
-          <img src="../../../assets/img/man.png" alt="" />
-        </div>
-      </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Tattou Parlour Owner Bruno </h1>
-          <h3>
-            Tattou  <span ref={textRef}></span>
-          </h3>
-        </div>
+      axios.get(`https://m5-tattoo.herokuapp.com/tatuadores`)
+        .then(response => {
+          setData(response.data)
+        })
+  }, [])
+console.log(data)
+  return (
+    <div>
       
-      </div>
+
     </div>
-      </div>
   )
 }

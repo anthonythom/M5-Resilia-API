@@ -12,6 +12,7 @@ export default function Tatuadores() {
           setData(response.data)
         })
   }, [])
+  
 console.log(data)
 
 

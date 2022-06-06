@@ -1,0 +1,24 @@
+.divPrincCard {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: .3rem;
+    gap: .4rem;
+       
+  }
+  
+  .cardInfos {  
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 28rem;
+    border-radius: 2%;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.76);
+    padding: 1rem;
+    background-color: #2e2f2f;
+    align-items: center;
+    justify-content: space-between;
+    color: #FBFFF1;
+    text-align: center;
+    
+  }

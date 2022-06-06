@@ -8,9 +8,9 @@ export default function Cardt({dados}) {
 
     <div className='divPrincCard'>
 	    <div className="cardInfos"></div>
-            <div className="avatar"><img src={dados.imagem} alt="" /></div>
-            <div className='nome'>{dados.titulo}</div>
-	        <div className='telefone'>{dados.descricao}</div>
+            <div className="avatar"><img src={dados.avatar} alt="" /></div>
+            <div className='nome'>{dados.nome}</div>
+	        <div className='telefone'>{dados.telefone}</div>
             </div>
 
         )

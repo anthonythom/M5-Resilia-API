@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import "./novoItem.css"
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import "./alteraItem.css"
 
-export default function NovoItem() {
+export default function Cadastro() {
   const { register, handleSubmit } = useForm();
   const [sucesso, setSucesso] = useState(false)
   const [tipo, setTipo] = useState("")
   const [rota, setRota] = useState("")
 
-  const estilo = {
+   const estilo = {
     resp: {
       display: sucesso ? "none" : "flex",
     },
@@ -30,16 +30,16 @@ export default function NovoItem() {
     console.log(data)
     const req = await axios.post(`https://m5-tattoo.herokuapp.com/${rota}`, data)
     console.log(req.statusText)
-    // if (req.statusText == 'Created') {
-    //   setSucesso(true)
-    // }
-    // setSucesso(true)
+    if (req.statusText == 'Created') {
+      setSucesso(true)
+    }
+    setSucesso(true)
   };
 
   return (
-    <div className='divPrincipalCadastro'>
+   <div className='divPrincipalCadastro'>
       <div className="cadastroContainer">
-        <h1 className='tituloCadastro' style={ estilo.resp }>Cadastro de novo item</h1>
+        <h1 className='tituloCadastro' style={ estilo.resp }>Alteração de cadastro</h1>
 
         <form action="" className='formCadastro' style={ estilo.resp } onSubmit={handleSubmit(onSubmit)}>
           <div className="containerInputsPai">
@@ -74,7 +74,7 @@ export default function NovoItem() {
               </div>
         </form>
       <div style={{justifyContent: "center", marginTop: "5rem"}}>
-        <h1 className='tituloCadastro' style={estilo.resposta}>Usuário criado com sucesso</h1>
+        <h1 className='tituloCadastro' style={estilo.resposta}>Item alterado com sucesso</h1>
       </div>
       </div>
     </div>

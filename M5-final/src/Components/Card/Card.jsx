@@ -27,7 +27,7 @@ export default function Card({dados}) {
 				<div className="cardInfos">
 
 					<div className="icones">
-						<Link type="button" to="/atualiza" className="edit"><Edit />
+						<Link type="button" to={"/atualiza/" + id} className="edit"><Edit />
 						
 						</Link><button className="delete"><DeleteForever onClick={() => handleDelete(id)} className="deleteIcon" /></button>
 						

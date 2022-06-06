@@ -10,9 +10,10 @@ import Home from './Pages/Home/Home';
 import Catalogo from './Pages/Catalogo/Catalogo';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import NovoItem from './Components/NovoItem/NovoItem';
+import Cadastro from './Pages/Cadastro/Cadastro';
 import Acessorios from './Pages/Galeria/Galeria';
 import Orcamento from './Pages/Orcamento/Orcamento';
+import AlteraItem from "./Pages/AlteraItem/AlteraItem"
 
 function App() {
   return (
@@ -32,8 +33,12 @@ function App() {
           <Acessorios />
         </Route>
 
+        <Route path="/atualiza/:itemID">
+          <AlteraItem />
+        </Route>
+
         <Route path="/cadastro">
-          <NovoItem />
+          <Cadastro />
         </Route>
 
         <Route path="/orcamento">

@@ -26,7 +26,7 @@ return (
       <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="../../../assets/img/tatuadoresimg.jpg" alt="" />
+          <img src="../../../assets/img/tatu-peru.jpg" alt="" />
         </div>
       </div>
       <div className="right">

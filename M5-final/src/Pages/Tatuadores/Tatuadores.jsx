@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import "./tatuadores.css"
 import axios from "axios"
+import Cardt from '../../Components/Cardt/Cardt'
 
 export default function Tatuadores() {
   const [data, setData] = useState({})
@@ -15,10 +16,21 @@ console.log(data)
 
 
 return (  
-  <div className='divPrincipal'>
+    <div className='divPrincipal'>
     <div className="divSuperior">
-      <h1 className='titulo'>tatuadores</h1>
+    <h1 className='titulo'>tatuadores</h1>
     </div>
-    </div>
-  )
-}
+  
+ <div className='listaTatuadores'>
+
+          {data.map((data, index) => (
+          <div key={index}>
+            <Cardt dados={data}/>
+          </div>
+          ))}
+        </div>
+        </div>
+ 
+    
+      )
+      }

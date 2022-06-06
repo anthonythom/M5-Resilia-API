@@ -16,6 +16,7 @@ import Tatuadores from './Pages/Tatuadores/Tatuadores';
 
 import Orcamento from './Pages/Orcamento/Orcamento';
 import AlteraItem from "./Pages/AlteraItem/AlteraItem"
+import Intro from './Components/Intro/Intro';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+          <Intro />
           
         </Route>
 

@@ -20,19 +20,19 @@ return (
     <div className='divPrincipal'>
       <div className="divSuperior">
         <h1 className='titulo'>Tatuadores</h1>
-      </div>np
+      </div>
       <div className="tatuador">
       </div>
       <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="../../../assets/img/tatu-peru.jpg" alt="" />
+          <img src="../../../assets/img/man.png" alt="" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
-          <h1>Tattou Parlour Owner </h1>
+          <h1>Tattou Parlour Owner Bruno </h1>
           <h3>
             Tattou  <span ref={textRef}></span>
           </h3>

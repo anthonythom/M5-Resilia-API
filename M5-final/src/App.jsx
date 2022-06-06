@@ -12,6 +12,8 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Cadastro from './Pages/Cadastro/Cadastro';
 import Acessorios from './Pages/Galeria/Galeria';
+import Tatuadores from './Pages/Tatuadores/Tatuadores';
+
 import Orcamento from './Pages/Orcamento/Orcamento';
 import AlteraItem from "./Pages/AlteraItem/AlteraItem"
 
@@ -32,6 +34,12 @@ function App() {
         <Route path="/acessorios">
           <Acessorios />
         </Route>
+
+        <Route path="/tatuadores">
+          <Tatuadores />
+        </Route>
+
+
 
         <Route path="/atualiza/:itemID">
           <AlteraItem />

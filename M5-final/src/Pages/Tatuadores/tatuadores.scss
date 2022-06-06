@@ -1,0 +1,118 @@
+.divSuperior {
+    width: 100%;
+    height: 25rem;
+    background-image: url("../../../assets/img/tatuadoresimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FBFFF1;
+    margin-top: -50px;
+    clip-path: polygon(0 12%, 100% 0, 100% 87%, 0% 100%);
+    
+  }
+  
+  .titulo {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-shadow: .2rem .2rem rgba(0, 0, 0, 0.795);
+    letter-spacing: .5rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .intro {
+    background-color: white;
+    display: flex;
+  
+   
+  
+    .left {
+      flex: 0.5;
+      overflow: hidden;
+  
+      .imgContainer {
+        width: 700px;
+        height: 700px;
+        background-color: rgb(44, 26, 30);
+        border-radius: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        float: right;
+  
+      
+  
+        img {
+          height: 90%;
+  
+         
+        }
+      }
+    }
+    .right {
+      flex: 0.5;
+      position: relative;
+  
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+  
+     
+  
+        h1 {
+          font-size: 60px;
+          margin: 10px 0;
+  
+        
+        }
+        h2 {
+          font-size: 35px;
+        }
+        h3 {
+          font-size: 30px;
+  
+      
+  
+          span {
+            font-size: inherit;
+            color: rgb(122, 42, 58);
+          }
+  
+          .ityped-cursor {
+            animation: blink 1s infinite;
+          }
+  
+          @keyframes blink {
+              50%{
+                  opacity: 1;
+              }
+              100%{
+                  opacity: 0;
+              }
+          }
+        }
+      }
+      a {
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+  
+        img {
+          width: 30px;
+          animation: arrowBlink 2s infinite;
+        }
+  
+        @keyframes arrowBlink {
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    
+  
+    }}

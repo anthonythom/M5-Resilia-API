@@ -11,14 +11,12 @@ export default function Acessorios() {
     useEffect(() => {
         axios.get(`https://m5-tattoo.herokuapp.com/acessorios`)
             .then(resposta => {
-                console.log(resposta)
                 setData(resposta.data)
             })
             .catch(error => {
                 console.log(error)
             })
     }, [])
-    console.log(data)
 
     return(  
         <div className='divPrincipal'>
@@ -30,7 +28,7 @@ export default function Acessorios() {
             <div className='listaAcessorios'>
                 {data.map((data, index) => (
                      <div key={index}>
-                        <Card dados={data}/>
+                        <Card dados={data} type="acessorios"/>
                     </div>
                     ))}
                 </div>

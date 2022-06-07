@@ -15,7 +15,10 @@ export default function Intro() {
   }, []);
 
 return (  
-    <div className='divPrincipal'>
+
+    <div>
+      
+
       <div className="tatuador">
       </div>
       <div className="intro" id="intro">

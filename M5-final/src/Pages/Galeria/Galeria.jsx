@@ -21,20 +21,20 @@ export default function Acessorios() {
     console.log(data)
 
     return(  
-        <div className='divPrincipal'>
-            <div className="divImagem">
+        <div className='divSuperiorAc'>
+            <div className="divImagemAc">
                 <h1 className='titulo'>Acessórios</h1>
             </div>
         <div>
         <Link type="button" to="/cadastro" className='btnAdd'>+</Link>
-            <div className='listaAcessorios'>
+        <div className='listaAcessorios'>
                 {data.map((data, index) => (
                      <div key={index}>
                         <Card dados={data}/>
                     </div>
                     ))}
                 </div>
-            </div>
+        </div>
         </div>
     )
 }

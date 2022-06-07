@@ -1,5 +1,5 @@
-.divImagem{
-  background: url("../../../assets/img/mostruario-crop.jpg");
+.divImagemAc {
+  background: url("../../../assets/img/tatuadoresimg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,18 +13,6 @@
   
 }
 
-.divSuperior {
-  width: 100%;
-  height: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FBFFF1;
-  background-position: center;
-  font-family: 'Plus Jakarta Sans', sans-serif;
- 
-}
-
   
 .titulo {
     font-size: 3.2rem;
@@ -34,18 +22,15 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
   
-.listaTattoo {
+.listaAcessorios {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
  }
-  
-.listaItens {
-    font-size: 2rem;
-}
-  
+    
 .btnAdd{
     font-size: 3rem;
     text-align: center;
@@ -63,3 +48,6 @@
   align-items: center;
   justify-content: right;
 }
+
+
+

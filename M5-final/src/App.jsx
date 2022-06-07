@@ -7,16 +7,15 @@ import {
   Switch
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
-import Catalogo from './Pages/Catalogo/Catalogo';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Cadastro from './Pages/Cadastro/Cadastro';
 import Acessorios from './Pages/Galeria/Galeria';
 import Tatuadores from './Pages/Tatuadores/Tatuadores';
-
 import Orcamento from './Pages/Orcamento/Orcamento';
 import AlteraItem from "./Pages/AlteraItem/AlteraItem"
 import Intro from './Components/Intro/Intro';
+import Catalogo from './Pages/Catalogo/Catalogo';
 
 function App() {
   return (

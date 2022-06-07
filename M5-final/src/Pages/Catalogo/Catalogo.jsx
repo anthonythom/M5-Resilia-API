@@ -19,8 +19,8 @@ export default function Catalogo() {
   }, [])
 
   return (  
-    <div className='divPrincipal'>
-      <div className="divSuperior">
+    <div className='divPrincipalCat'>
+      <div className="divSuperiorCat">
         <h1 className='titulo'>catalogo</h1>
       </div>
       <div>

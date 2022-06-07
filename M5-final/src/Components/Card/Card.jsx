@@ -4,11 +4,11 @@ import { Edit, DeleteForever } from '@mui/icons-material';
 import axios from "axios";
 import "./card.css"
 
-export default function Card({dados}) {
+export default function Card({dados, type}) {
 	const id = dados._id
 
 	const handleDelete = (id) => {
-    axios.delete(`https://m5-tattoo.herokuapp.com/catalogo/${id}`)
+    axios.delete(`https://m5-tattoo.herokuapp.com/${type}/${id}`)
       .then(resposta => {
         window.location.reload()
       })
@@ -22,7 +22,7 @@ export default function Card({dados}) {
 			<div className='divPrincCard'>
 				<div className="cardInfos">
 					<div className="icones">
-						<Link type="button" to={"/atualiza/" + id} className="edit"><Edit />
+						<Link type="button" to={"/atualiza/" + id + "." + type} className="edit"><Edit />
 						</Link><button className="delete"><DeleteForever onClick={() => handleDelete(id)} className="deleteIcon" /></button>
 					</div>
 				<div className="divImg"><img src={dados.imagem} alt="" /></div>

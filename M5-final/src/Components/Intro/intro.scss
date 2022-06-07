@@ -1,5 +1,3 @@
-
-
   .intro {
 
     display: flex;
@@ -11,8 +9,8 @@
       overflow: hidden;
   
       .imgContainer {
-        width: 700px;
-        height: 700px;
+        width: 100%;
+        height: 90%;
         background-color: rgb(44, 26, 30);
         border-radius: 50%;
         display: flex;
@@ -36,7 +34,7 @@
       .wrapper {
         width: 100%;
         height: 100%;
-        padding-left: 50px;
+        padding-left: 10%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -44,16 +42,16 @@
      
   
         h1 {
-          font-size: 60px;
-          margin: 10px 0;
+          font-size: 5rem;
+          margin: 1rem 0;
   
         
         }
         h2 {
-          font-size: 35px;
+          font-size: 3rem;
         }
         h3 {
-          font-size: 30px;
+          font-size: 2.5rem;
   
       
   
@@ -78,11 +76,11 @@
       }
       a {
         position: absolute;
-        bottom: 10px;
+        bottom: 1rem;
         left: 40%;
   
         img {
-          width: 30px;
+          width: 30%;
           animation: arrowBlink 2s infinite;
         }
   

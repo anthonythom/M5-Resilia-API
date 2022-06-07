@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 50%;
+  width: 90%;
 }
 
 .menuItens {
@@ -51,8 +51,9 @@
   display: flex;
   align-items: center;
   color: #FBFFF1;
-  width: 150px;
-  gap: 30px;
+  width: 10rem;
+  padding: 2%;
+ 
 }
 
 .menuItens:hover { 
@@ -77,21 +78,22 @@
   
   .menuContainer {
     justify-content: left;
-    margin-left: 5%;
+    position: relative;
+    display: inline-block;
+        
   }
 
   .menuMobile {
     display: flex;
     border: none;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
     text-transform: uppercase;
     color: #fff;
     cursor: pointer;
     margin: 10px;
     align-items: center;
     position: relative;
-    z-index: 300;
+    
   }
 
   .menuMobile.active::before {
@@ -114,9 +116,20 @@
   }
 
   .menuHeader.active {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 3rem;
-}
+  width: 6rem;
+  height: 12rem;
+  position: absolute;
+  background-color: #3E4247;
+  color:#FBFFF1;
+  opacity: 1;
+  border-radius: 0 1rem 1rem 0;
+  }
+
+  .menuItens{
+    color: #FBFFF1;
+    padding: 0.4rem;
+    padding-left: 1rem;
+  }
 }

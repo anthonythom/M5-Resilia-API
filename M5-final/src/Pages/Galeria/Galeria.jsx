@@ -11,30 +11,28 @@ export default function Acessorios() {
     useEffect(() => {
         axios.get(`https://m5-tattoo.herokuapp.com/acessorios`)
             .then(resposta => {
-                console.log(resposta)
                 setData(resposta.data)
             })
             .catch(error => {
                 console.log(error)
             })
     }, [])
-    console.log(data)
 
     return(  
-        <div className='divPrincipal'>
-            <div className="divImagem">
+        <div className='divSuperiorAc'>
+            <div className="divImagemAc">
                 <h1 className='titulo'>Acessórios</h1>
             </div>
         <div>
         <Link type="button" to="/cadastro" className='btnAdd'>+</Link>
-            <div className='listaAcessorios'>
+        <div className='listaAcessorios'>
                 {data.map((data, index) => (
                      <div key={index}>
-                        <Card dados={data}/>
+                        <Card dados={data} type="acessorios"/>
                     </div>
                     ))}
                 </div>
-            </div>
+        </div>
         </div>
     )
 }

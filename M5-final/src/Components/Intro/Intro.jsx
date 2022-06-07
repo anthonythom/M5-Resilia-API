@@ -10,15 +10,15 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings: ["Desiner", "Artist", "Creator"],
+      strings: ["Designer", "Artist", "Creator"],
     });
   }, []);
 
 return (  
-    <div className='divPrincipal'>
-      {/* <div className="divSuperior">
-        <h1 className='titulo'>Tatuadores</h1>
-      </div> */}
+
+    <div>
+      
+
       <div className="tatuador">
       </div>
       <div className="intro" id="intro">

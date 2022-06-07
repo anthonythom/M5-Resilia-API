@@ -19,8 +19,8 @@ export default function Catalogo() {
   }, [])
 
   return (  
-    <div className='divPrincipal'>
-      <div className="divSuperior">
+    <div className='divPrincipalCat'>
+      <div className="divSuperiorCat">
         <h1 className='titulo'>catalogo</h1>
       </div>
       <div>
@@ -30,7 +30,7 @@ export default function Catalogo() {
         <div className='listaTattoo'>
           {data.map((data, index) => (
           <div key={index}>
-            <Card dados={data}/>
+            <Card dados={data} type="catalogo"/>
           </div>
           ))}
         </div>

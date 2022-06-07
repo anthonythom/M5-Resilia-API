@@ -36,6 +36,7 @@ const Slider = () => {
     return () => clearInterval(slideInterval);
   }, [currentSlide]);
 
+
   return (
 
     <main className="mainBox">

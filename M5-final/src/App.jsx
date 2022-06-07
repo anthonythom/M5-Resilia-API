@@ -21,7 +21,8 @@ import Intro from './Components/Intro/Intro';
 function App() {
   return (
     <Router>
-      <Header />
+        <Header />
+  
       <Switch>
         <Route exact path="/">
           <Home />
@@ -56,7 +57,8 @@ function App() {
         </Route>
 
       </Switch>
-      <Footer />
+  
+    <Footer />
     </Router>
   )
 }

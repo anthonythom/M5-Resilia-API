@@ -16,9 +16,6 @@ export default function Intro() {
 
 return (  
     <div className='divPrincipal'>
-      {/* <div className="divSuperior">
-        <h1 className='titulo'>Tatuadores</h1>
-      </div> */}
       <div className="tatuador">
       </div>
       <div className="intro" id="intro">

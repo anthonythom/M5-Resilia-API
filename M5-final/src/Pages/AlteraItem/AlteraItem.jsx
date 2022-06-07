@@ -6,6 +6,9 @@ import "./alteraItem.css"
 
 export default function Cadastro() {
   const id = useParams()
+  let parametros = id.itemID
+  parametros = parametros.split(".")
+  
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState({})
   const [sucesso, setSucesso] = useState(false)
@@ -20,18 +23,13 @@ export default function Cadastro() {
   }
 
   useEffect(() => {
-    console.log(data)
-      axios.get(`https://m5-tattoo.herokuapp.com/acessorios/${id.itemID}`)
+      axios.get(`https://m5-tattoo.herokuapp.com/${parametros[1]}/${parametros[0]}`)
         .then(accResponse => {
           setData(accResponse.data)
         })
-    console.log(data)
-      if (data == null) {
-        axios.get(`https://m5-tattoo.herokuapp.com/catalogo/${id.itemID}`)
-          .then(catResponse => {
-            setData(catResponse.data)
-          })
-      }
+        .catch(erro => {
+          console.log(erro)
+        })
   }, [])
   
   const onSubmit = async valor => {
@@ -40,10 +38,8 @@ export default function Cadastro() {
            valor[key] = data[key]
         }
       }
-    const req = await axios.put(`https://m5-tattoo.herokuapp.com/acessorios/${id.itemID}`, valor)
-    const req2 = await axios.put(`https://m5-tattoo.herokuapp.com/catalogo/${id.itemID}`, valor)
-    console.log(req)
-    if (req.statusText == 'OK' || req2.statusText == 'OK') {
+    const req = await axios.put(`https://m5-tattoo.herokuapp.com/${parametros[1]}/${parametros[0]}`, valor)
+    if (req.statusText == 'OK') {
       setSucesso(true)
     }
   };

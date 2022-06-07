@@ -30,7 +30,7 @@ export default function Catalogo() {
         <div className='listaTattoo'>
           {data.map((data, index) => (
           <div key={index}>
-            <Card dados={data}/>
+            <Card dados={data} type="catalogo"/>
           </div>
           ))}
         </div>

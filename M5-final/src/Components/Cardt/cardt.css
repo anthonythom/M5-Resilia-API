@@ -1,0 +1,60 @@
+.divPrincCard {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: .3rem;
+    gap: .4rem;
+       
+  }
+  
+  .cardInfos {  
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 28rem;
+    border-radius: 2%;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.76);
+    padding: 1rem;
+    background-color: #2e2f2f;
+    align-items: center;
+    justify-content: space-between;
+    color: #FBFFF1;
+    text-align: center;
+    
+  }
+
+  .avatar img {
+    max-width: 18rem;
+    max-height: 15rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem .9rem rgba(0, 0, 0, 0.76);
+    padding: 0;
+  }
+
+  .cardInfos:hover {
+    transform: scale(1.05);
+    transition-delay: 0.5;
+    transition-duration: 1s;
+  }
+
+  .nome{
+    padding: .2rem;
+    margin-top: .1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .h1{  padding: .2rem;
+    margin-top: .1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+  }
+  .telefone {
+    padding: .2rem;
+    margin-top: .1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }

@@ -17,14 +17,19 @@ Neste repositório se encontra a entidade de Acessorios, Orçamentos, Catalogo, 
 
 Nesta aplicação é possível registrar, listar, atualizar e deletar. </p>
 
-<li> Tecnologias usadas:</li><br>
-<p>
+# <li> Tecnologias usadas:</li><br>
+<p align="center">
 	
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40"/>
+	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40"/>
+	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" />
+	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="40" height="40" />
+	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" width="40" height="40" />
+	
 </p>
 
  API Consumida no Projeto:
@@ -47,7 +52,7 @@ $ yarn run dev
 
 	
 <h2>Contribuidores do projeto</h2>
-## 🤝 Colaboradores
+ 🤝 Colaboradores
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
@@ -77,6 +82,23 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
+	  <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/96597279?v=4" width="100px;" alt="Foto do Rafael Alesson"/><br>
+        <sub>
+          <b>Rafael Alesson</b>
+        </sub>
+      </a>
+    </td>
+	  <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/95666367?v=4" width="100px;" alt="Foto do toninho"/><br>
+        <sub>
+          <b>Anthony Thomas</b>
+        </sub>
+      </a>
+    </td>
+	  
   </tr>
 </table>
 <li><a href="https://github.com/anthonythom">Anthony Thomas</a></li>

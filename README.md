@@ -26,14 +26,12 @@ Nesta aplicação é possível registrar, listar, atualizar e deletar. </p>
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="40" height="40" />
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" width="40" height="40" />
 </p>
-	````
+
  API Consumida no Projeto:
 <h2>ℹ️ COMO USAR ℹ️</h2>
 
-````
 
 
-```
 # Clone este repositorio
 $ git clone https://github.com/anthonythom/M5-Resilia-API.git
 
@@ -45,16 +43,15 @@ $ npm install
 
 # Inicie o projeto 
 $ yarn run dev
-```
 
-	````
+
+	
 <h2>Contribuidores do projeto</h2>
 <li><a href="https://github.com/anthonythom">Anthony Thomas</a></li>
 <li><a href="https://github.com/BrunoBlanquez">Bruno Blanquez</a></li>
 <li><a href="https://github.com/Rafalesson">Rafael Alesson</a></li>
 <li><a href="https://github.com/Peruzini">Rafael Peruzini</a></li>
 <li><a href="https://github.com/YasminRamos">Yasmin Ramos</a></li>
-````
 <br><br>
 
 # <p> <a href="https://www.resilia.com.br/">Resilia</a> </p>

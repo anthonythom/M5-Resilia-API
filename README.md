@@ -1,9 +1,9 @@
 # M5-Resilia-API  <img height="30" src="https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png" />  
  
 # <h1>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
            PROJETO FINAL - MÓDULO 5  RESILIA
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
           </h1>
 
 <br>
@@ -22,9 +22,9 @@ Neste repositório se encontra a entidade de Acessorios, Orçamentos, Catalogo, 
 Nesta aplicação é possível registrar, listar, atualizar e deletar. </p>
 
 # <li> Tecnologias usadas:</li><br>
-<p align="center">
+<p >
 	
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
 	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40"/>
 	

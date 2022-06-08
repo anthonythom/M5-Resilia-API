@@ -1,6 +1,6 @@
 # M5-Resilia-API
  
-# <h1> : <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40"/> Projeto final do módulo 5 </h1>
+# <h1><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40"/> Projeto final do módulo 5 </h1>
 
 <br>
 <p align="center">
@@ -9,9 +9,9 @@
 <br>
 
 <h2>Sobre o projeto:</h2>
-<p> Projeto desenvolvido para a conclusão do módulo 5 na Resilia Educação.
+<p> Projeto desenvolvido para a conclusão do módulo 5 da <a href="https://www.resilia.com.br/">Resilia Educação</a>.
 
-Para este projeto, foi proposto a integração de front-end como back-end de uma API de um Estudio de tatuagem feita no módulo 4, onde cada integrante do grupo ficou responsável por integrar uma entidade.
+Para este projeto, nos foi proposto fazer a integração do front-end com o back-end de uma API Rest desenvolvida módulo 4, utilizando react-router-dom, biblioteca vite, hooks e afins para sua implementação.
 
 Neste repositório se encontra a entidade de Acessorios, Orçamentos, Catalogo, Catalogo de exclusivas e Tatuadores.
 
@@ -47,6 +47,38 @@ $ yarn run dev
 
 	
 <h2>Contribuidores do projeto</h2>
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/92882615?v=4" width="100px;" alt="Foto do Bruno Blanquez"/><br>
+        <sub>
+          <b>Bruno Blanquez</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/96249099?v=4" width="100px;" alt="Foto da Yasmin Ramos"/><br>
+        <sub>
+          <b>Yasmin Ramos</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/96450995?v=4" width="100px;" alt="Foto do Rafael Peruzini"/><br>
+        <sub>
+          <b>Rafael Peruzini</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 <li><a href="https://github.com/anthonythom">Anthony Thomas</a></li>
 <li><a href="https://github.com/BrunoBlanquez">Bruno Blanquez</a></li>
 <li><a href="https://github.com/Rafalesson">Rafael Alesson</a></li>

@@ -1,0 +1,138 @@
+<form action="" className="form-orcamento">
+    {console.log(nomeCompleto)}
+
+    <div className="inputName">
+      <label htmlFor="name">Nome Completo</label>
+      <input
+        type="text"
+        id="name"
+        onChange={(e) => setNomeCompleto(e.target.value)}
+      />
+    </div>
+
+    <div className="inputMail ">
+      <label htmlFor="email">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+    </div>
+
+    <div className="inputTele">
+      <label htmlFor="telefone">Telefone</label>
+      <input
+        type="tel"
+        id="telefone"
+        onChange={(e) => setTelefone(e.target.value)}
+      />
+    </div>		
+
+    <div className="inputCores">
+      <p>Cores da tatuagem</p>
+      <input
+        type="radio"
+        id="pretoebranco"
+        name="cor_tatuagem"
+        value="Pretoebranco"
+        onChange={(e) => setCor(e.target.value)}
+      />
+
+      <p>preto e branco</p>
+      <label htmlFor="pretoebranco">Preto e branco</label>
+
+      <input
+        type="radio"
+        id="colorido"
+        name="cor_tatuagem"
+        value="Colorido"
+        onChange={(e) => setCor(e.target.value)}
+      />
+      <p>Colorido</p>
+      <label htmlFor="colorido">Colorido</label>
+
+      <input
+        type="radio"
+        id="outras"
+        name="cor_tatuagem"
+        value="Outras"
+        onChange={(e) => setCor(e.target.value)}
+      />
+      <p> Outras</p>
+      <label htmlFor="outros">Outras</label>
+    </div>
+
+    
+
+      <div className="inputTamanho">
+        <label htmlFor="tamanho">Tamanho (cm)</label>
+        <input type="number"id="tamanho" onChange={(e) => setTamanhoTatuagem(e.target.value)}/>
+      </div>
+
+      
+      <div className="inputLargura">
+        <label htmlFor="largura"> Largura </label>
+        <input type="number" id="largura" onChange={(e) => setLarguraTatuagem(e.target.value)}/>
+      </div>
+    
+
+
+    <div className="inputParteCorpo">
+      <label htmlFor="">Parte do corpo</label>
+      <input
+        type="text"
+        id="parteCorpo"
+        onChange={(e) => setParteDoCorpo(e.target.value)}
+      />
+    </div>
+
+    <div className="inputFoto">
+      <label htmlFor="foto">Envie sua foto</label>
+      <input
+        type="file"
+        id="fotoTatuagem"
+        name="fotoTatuagem"
+        accept="image/png, image/jpeg"
+        onChange={(e) => setFoto(e.target.value)}
+      />
+    </div>
+
+    <div className="inputTextArea">
+      <textarea id="textarea" name="textarea" rows="10" cols="76"  placeholder= "Mensagem" onChange={(e) => setMensagem(e.target.value)}
+      ></textarea>
+    </div>
+    
+  </form>
+</div>
+
+<div className="divPai">
+    <div className="divSuperior">
+      <h1 className="titulo">Orçamentos</h1>
+    </div>
+
+<div className="font"><h2>Atenção</h2></div>
+              
+
+
+    <div className="textos">
+      <div className="bruninho">Para realizar o seu orçamento:</div><br />
+       
+      <li>
+        Envie as suas ideias, se possível envie fotos de referência da arte,
+        lembrando que quanto mais nítida e mostrando a arte sem distorções
+        melhor.
+      </li>
+      <li>
+        Informe o local do corpo que pretende realizar a sua tatuagem.
+      </li>
+      <li>
+      
+        Meça os centímetros da arte no local desejado com uma régua.
+      </li>
+      <li>Informe esses dados e logo o seu orçamento será realizar!</li>
+     
+
+    </div>
+     <div className="font">
+        <h2>Preencha o formulário abaixo</h2>
+      </div>

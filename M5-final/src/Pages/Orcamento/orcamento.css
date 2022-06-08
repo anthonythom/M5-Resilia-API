@@ -1,54 +1,92 @@
-/* .divPai{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+.divPrincipalCadastro {
   
-}
-h1{
-    text-align: center;
-    font-size: 3rem;
-}
-h2{
-    text-align: center;
-    font-size: 2rem;
-}
-h3{
-    text-align: center;
-    font-size: 2rem;
-}
-.input-group-1{
-    position: relative;
+  height: 100rem;
+  display: flex;
+  justify-content: center;
 }
 
-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(10px, 10px);
-    transform-origin: left;
-    transition: transform .25s;
-}
-#name {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    font: inherit;
-    color: #fff;
-    background-color: transparent;
-    outline: 2px solid #fff;
-}
-.input-group-1:focus-within label {
-    transform: 
-    translate(0, -30px) scale(.8);
-    color: #d1c5fc;
-}
-.input-group-1:focus-within #name {
-    outline-color:#d1c5fc ;
+.formOrcamento {
+  margin-top: 3rem;
+  height: 50rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2%;
+  box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.76);
+  padding: 1rem;
+  background-color: #2e2f2f;
+  color: #FBFFF1;
 }
 
-.form-orcamento{
-    background-color: chartreuse;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-} */
+.tituloCadastro {
+  margin-top: 3rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.formCadastro {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerInputsPai {
+  display: flex;
+}
+
+.containerInputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.labelCadastro {
+  margin-bottom: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.inputCadastro {
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  width: 20rem;
+  padding: 10px;
+  border: 2px solid #000;
+  color: #2e2f2f;
+}
+
+.inputDesc {
+  height: 12rem;
+  resize: none;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 10rem;
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  font-size: larger;
+  background-color: #3E4247;
+  border: .1rem solid #2e2f2f;
+  border-radius: 5%;
+  color:#FBFFF1 ;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover{
+  background-color: #FBFFF1;
+  color: #2e2f2f;
+  font-size: larger;
+  font-weight: bolder;
+  transition-duration: 1s;
+  box-shadow: .1rem .1rem .9rem rgba(0, 0, 0, 0.76);
+}
+

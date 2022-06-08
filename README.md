@@ -1,6 +1,10 @@
-# M5-Resilia-API
+# M5-Resilia-API  <img height="30" src="https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png" />  
  
-# <h1><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" width="40" height="40"/> Projeto final do módulo 5 </h1>
+# <h1>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+           PROJETO FINAL - MÓDULO 5  RESILIA
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          </h1>
 
 <br>
 <p align="center">

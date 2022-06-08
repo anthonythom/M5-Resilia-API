@@ -1,0 +1,43 @@
+<div className='divPrincipalCadastro'>
+<div className="formOrcamento">
+  <h1 className='tituloCadastro' >Preencha o formulario</h1>
+
+  <form action="" className='formCadastro'  onSubmit={handleSubmit(onSubmit)}>
+    <div className="containerInputsPai">
+      <div className="containerInputs">
+        <label htmlFor="" className='labelCadastro'>Nome Completo</label>
+        <input type="text" className='inputCadastro'placeholder="Nome"/>
+
+        <label htmlFor="" className='labelCadastro'>E-mail</label>
+        <input type="mail" className='inputCadastro'placeholder="E-mail"/>
+
+        <label htmlFor="" className='labelCadastro'>Descrição</label>
+        <textarea type="text" className='inputCadastro inputDesc'placeholder="Descrição detalhada"/>
+      </div>
+
+      <div className="containerInputs">
+        <label htmlFor="" className='labelCadastro'>Tamanho (em cm)</label>
+        <input type="text" className='inputCadastro'placeholder="15"/>
+
+        <label htmlFor="" className='labelCadastro'>Largura (em cm)</label>
+        <input type="text" className='inputCadastro'placeholder="45"/>
+
+        <label htmlFor="" className='labelCadastro'>Imagem</label>
+        <input type="image" className='inputCadastro'placeholder=""/>
+
+        <label htmlFor="" className='labelCadastro'></label>
+        <select name="" id="" className='inputCadastro' onChange={(e) => setTipo(e.target.value)}>
+          <option value=""></option>
+          <option value="1">Colorido</option>
+          <option value="2">Preto e branco</option>
+          <option value="3">Outros</option>
+        </select>
+      </div>
+    </div>
+        <div className="">
+          <button className='btn'>enviar</button>
+        </div>
+  </form>
+
+</div>
+</div>

@@ -82,7 +82,7 @@ export default function Cadastro() {
         </form>
       <div style={{justifyContent: "center", marginTop: "5rem"}}>
         <h1 className='tituloCadastro' style={estilo.resposta}>Item alterado com sucesso</h1>
-        <input type="button" id="refresh" {onclick="()=>recarrega"} >Adicionar mais um item </input> 
+        {/* <input type="button" id="refresh" {onclick="()=>recarrega"} >Adicionar mais um item </input>  */}
         
       </div>
       </div>

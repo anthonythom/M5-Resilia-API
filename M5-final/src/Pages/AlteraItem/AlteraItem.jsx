@@ -44,6 +44,12 @@ export default function Cadastro() {
     }
   };
 
+  function recarrega(){
+    var btn = document.querySelector("#refresh");
+    btn = location.reload()
+  }
+
+
   return (
    <div className='divPrincipalCadastro'>
       <div className="cadastroContainer">
@@ -76,6 +82,8 @@ export default function Cadastro() {
         </form>
       <div style={{justifyContent: "center", marginTop: "5rem"}}>
         <h1 className='tituloCadastro' style={estilo.resposta}>Item alterado com sucesso</h1>
+        <input type="button" id="refresh" {onclick="()=>recarrega"} >Adicionar mais um item </input> 
+        
       </div>
       </div>
     </div>

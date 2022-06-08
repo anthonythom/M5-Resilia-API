@@ -1,10 +1,7 @@
-# M5-Resilia-API  <img height="30" src="https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png" />  
+# <img height="30" src="https://www.resilia.com.br/wp-content/themes/resiliaTheme/assets/images/logo.png" />  
  
 # <h1>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
-           PROJETO FINAL - MÓDULO 5  RESILIA
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
-          </h1>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/> PROJETO FINAL - MÓDULO 5  RESILIA </h1>
 
 <br>
 <p align="center">
@@ -21,8 +18,8 @@ Neste repositório se encontra a entidade de Acessorios, Orçamentos, Catalogo, 
 
 Nesta aplicação é possível registrar, listar, atualizar e deletar. </p>
 
-# <li> Tecnologias usadas:</li><br>
-<p >
+# <li> Tecnologias usadas: </li><br>
+
 	
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/>
 	
@@ -34,12 +31,11 @@ Nesta aplicação é possível registrar, listar, atualizar e deletar. </p>
 	
 	<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" width="40" height="40" />
 	
-</p>
+
 
  API Consumida no Projeto:
-<h2>ℹ️ COMO USAR ℹ️</h2>
 
-
+## 🚀 Instalando o projeto
 
 # Clone este repositorio
 $ git clone https://github.com/anthonythom/M5-Resilia-API.git
@@ -48,10 +44,12 @@ $ git clone https://github.com/anthonythom/M5-Resilia-API.git
 $ cd M5-Resilia-API
 
 # Instale as dependências
-$ npm install
+$ npm install vite@lastest
 
 # Inicie o projeto 
-$ yarn run dev
+$ yarn run dev ou npm start / npm run build
+
+# Abra http://localhost:3000 para ver o app no navegador.
 
 
 	
@@ -104,12 +102,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
 	  
   </tr>
-</table>
-<li><a href="https://github.com/anthonythom">Anthony Thomas</a></li>
-<li><a href="https://github.com/BrunoBlanquez">Bruno Blanquez</a></li>
-<li><a href="https://github.com/Rafalesson">Rafael Alesson</a></li>
-<li><a href="https://github.com/Peruzini">Rafael Peruzini</a></li>
-<li><a href="https://github.com/YasminRamos">Yasmin Ramos</a></li>
-<br><br>
+
 
 # <p> <a href="https://www.resilia.com.br/">Resilia</a> </p>

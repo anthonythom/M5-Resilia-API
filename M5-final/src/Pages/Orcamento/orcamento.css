@@ -1,15 +1,13 @@
 
 
-.divPrincipalCadastro {
-  
-  height: 100rem;
+.divPrincipalOrcamento {
   display: flex;
   justify-content: center;
 }
 
 .formOrcamento {
   margin-top: 3rem;
-  height: 50rem;
+  height: auto;
   width: 80%;
   display: flex;
   align-items: center;
@@ -27,26 +25,33 @@
   font-size: 2.5rem;
 }
 
-.formCadastro {
+.formCadastroOrcamento {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 
-.containerInputsPai {
+.orcamentoInputPai {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.containerInputs {
+.orcamentoInput {
   display: flex;
   flex-direction: column;
-  margin-right: 5rem;
 }
 
-.labelCadastro {
+.labelCadastroOrcamento {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif; 
+}
+
+.labelCadastroOrcamento > label {
+  margin-bottom: 1rem;
 }
 
 .inputCadastro {
@@ -90,3 +95,18 @@
   box-shadow: .1rem .1rem .9rem rgba(0, 0, 0, 0.76);
 }
 
+@media (max-width: 820px) {
+  .orcamentoInputPai {
+    flex-direction: column;
+    align-items: center;
+  }
+  .orcamentoInput {
+    margin: 0;
+  }
+  .formOrcamento {
+    height: auto;
+  }
+  .inputCadastro {
+    width: auto;
+  }
+}

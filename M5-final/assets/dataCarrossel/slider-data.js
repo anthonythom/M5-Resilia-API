@@ -5,17 +5,17 @@ export const sliderData = [
       desc: "This is the description of slide one Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
     },
     {
-      image: "../assets/home_img/Screenshot_2.png",
+      image: "../assets/home_img/img002.jpg",
       heading: "Slide Dois",
       desc: "This is the description of slide two Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
     },
     {
-      image: "../assets/home_img/Screenshot_5.png",
+      image: "../assets/home_img/img003.jpg",
       heading: "Slide Três",
       desc: "This is the description of slide three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
     },
     {
-        image: "../assets/home_img/Screenshot_4.png",
+        image: "../assets/home_img/img004.jpg",
         heading: "Slide Quatro",
         desc: "This is the description of slide four Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
       },
@@ -25,12 +25,12 @@ export const sliderData = [
         desc: "This is the description of slide five Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
       },
       {
-        image: "../assets/home_img/Screenshot_1.png",
+        image: "../assets/home_img/img006.jpg",
         heading: "Slide Seis",
         desc: "This is the description of slide six Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
       },
       {
-        image: "../assets/home_img/Screenshot_4.png",
+        image: "../assets/home_img/img007.jpg",
         heading: "Slide Sete",
         desc: "This is the description of slide seven Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quos quas, voluptatum nesciunt illum exercitationem.",
       }

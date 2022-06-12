@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "../../../assets/dataCarrossel/slider-data";
+import Intro from "../../Components/Intro/Intro";
+import MapHome from "../../Components/Map/mapHome";
 import "./home.scss";
 
 const Slider = () => {
@@ -36,7 +38,6 @@ const Slider = () => {
     return () => clearInterval(slideInterval);
   }, [currentSlide]);
 
-
   return (
 
     <main className="mainBox">
@@ -64,6 +65,10 @@ const Slider = () => {
           );
         })}
       </section>
+
+      <Intro />
+
+      <MapHome />
     </main>
   );
 };

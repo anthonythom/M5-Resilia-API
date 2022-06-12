@@ -14,7 +14,6 @@ import Acessorios from './Pages/Galeria/Galeria';
 import Tatuadores from './Pages/Tatuadores/Tatuadores';
 import Orcamento from './Pages/Orcamento/Orcamento';
 import AlteraItem from "./Pages/AlteraItem/AlteraItem"
-import Intro from './Components/Intro/Intro';
 import Catalogo from './Pages/Catalogo/Catalogo';
 
 function App() {
@@ -24,9 +23,7 @@ function App() {
   
       <Switch>
         <Route exact path="/">
-          <Home />
-          <Intro />
-          
+          <Home /> 
         </Route>
 
         <Route path="/catalogo">

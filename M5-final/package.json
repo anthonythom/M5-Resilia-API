@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.0",
     "@mui/material": "^5.8.1",
+    "@react-google-maps/api": "^2.12.0",
     "axios": "^0.27.2",
     "ityped": "^1.0.3",
     "react": "^18.0.0",

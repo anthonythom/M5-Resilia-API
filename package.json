@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "babel src -d lib",
+    "prebuild": "jest",
     "preview": "vite preview"
   },
   "dependencies": {
